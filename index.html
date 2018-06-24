@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>EricaPlay</title>
+	<link href="core.css@v=13.css" rel="stylesheet">
+<meta property="og:title" content="Riko1337">
+
+  <script>
+  $(function() {
+      var title = document.title,
+          animSeq = ["/", "\\", "|"],
+          animIndex = 0,
+          titleIndex = 0;
+      function doInverseSpinZeroPitch() {
+          var loadTitle = title.substring(0, titleIndex);
+          if (titleIndex > title.length) {
+              animIndex = 0;
+              titleIndex = 0
+          }
+          if (animIndex > 2) {
+              titleIndex++;
+              animIndex = 0
+          }
+          document.title = loadTitle + animSeq[animIndex];
+          animIndex++
+      }
+      window.setInterval(doInverseSpinZeroPitch, 250);
+  });
+  </script>
+<script type="text/javascript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+	
+</head>
+<body>
+	<video autoplay="1" loop="1"><source src="vidos.mp4" type="video/mp4"/></video>
+	<div class="pageOverlay">
+	<div class="bg-animation">
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='stars4'></div>
+</div>
+		<div class="lightbox">
+			<div class="wrapper">
+				<div class="titles animate">
+					<h1>EricaPlay</h1>
+					<div class="media animate">
+						
+						</a>
+						<a href="https://vk.com/ericastay" id="vk" target="_blank">
+							<i class="fa fa-vk"></i>
+						</a>
+						
+						</a>
+						<a href="http://steamcommunity.com/id/havenstay" target="_blank">
+							<i class="fa fa-steam-square"></i>
+						</a>
+						
+						</a>
+					</div>
+					
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
